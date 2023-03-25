@@ -10,7 +10,7 @@ class Person{
         int Age;
 
     public: 
-        Person(string name, int id, int age); //class default constructor 
+        Person(){} //class default constructor 
         void setName(string name); //setter for the Name variable
         string getName(); //getter for the Name variable 
         void setID(int id); //setter for the ID variable 
