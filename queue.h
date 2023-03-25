@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+#ifndef queue_h
+#define queue_h
+
 template <class X>
 class queue
 {
@@ -18,4 +21,4 @@ public:
     bool isFull();   //returns false if the queue is full, fasle otherwise 
 };
  
-
+#endif
