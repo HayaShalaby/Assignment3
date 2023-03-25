@@ -1,6 +1,6 @@
-#include<iostream>
+
 #include "queue.h"
-using namespace std;
+
 
 template <class X>
 queue<X>::queue(int size)
