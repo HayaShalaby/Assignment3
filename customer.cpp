@@ -1,14 +1,9 @@
-#include<iostream>
+
 #include "customer.h"
 #include "appointment.h"
-using namespace std;
 
 
-Customer::Customer(string name, int id, int age, int mechid, int hr, int min): Person(name, id, age){
-    mechanicID = mechid;
-    appointment.hours = hr;
-    appointment.mins = min;
-}
+
 
 void Customer::setMechanicID(int mechid){
     mechanicID = mechid;
