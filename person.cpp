@@ -1,12 +1,5 @@
-#include<iostream> 
-#include "person.h"
-using namespace std;
 
-Person::Person(string name, int id, int age){
-    Name = name;
-    ID = id;
-    Age = age;
-}
+#include "person.h"
 
 void Person::setName(string name){
     Name = name;
