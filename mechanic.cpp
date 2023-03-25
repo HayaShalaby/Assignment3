@@ -1,11 +1,8 @@
-#include<iostream> 
+
 #include "person.h"
 #include "mechanic.h"
-using namespace std;
 
-Mechanic::Mechanic(string name, int id, int age, int counter): Person(name, id, age){
-     Counter = counter;
-}
+
 
 bool Mechanic::isAvailable(int hrs, int min){
     for(int i=0; i<Counter; i++){
