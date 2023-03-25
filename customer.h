@@ -10,7 +10,7 @@ class Customer : public Person{
     Appointment appointment;
 
     public:
-        Customer(string name="", int id=0, int age=0, int mechanicID=0, int hr=0, int min=0): Person(name, id, age){} //class default constructor 
+        Customer(): Person(){} //class default constructor 
         void setMechanicID(int mechid); //setter for the mechanicID variable 
         int getMechanicID(); //getter for the mechanicID variable 
         void setAppointment(Appointment app); //setter for the appointment object 
