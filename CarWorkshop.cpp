@@ -1,4 +1,4 @@
-#include<iostream>
+
 #include<fstream>
 #include<cstdlib>
 #include "person.h"
@@ -6,7 +6,7 @@
 #include "mechanic.h"
 #include "queue.h"
 #include "appointment.h"
-using namespace std;
+
 
 
 int main(){
@@ -85,7 +85,7 @@ int main(){
     }
 
 
-    queue<Customer>q;
+    queue<Customer>q(0);
     for (int i = 0; i < x; i++){ //pushing the ordered customers array into queue 
         q.push(customers[i]);
     }
