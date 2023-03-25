@@ -10,7 +10,7 @@ class Mechanic: public Person{
     Appointment *Bookings = new Appointment [Counter]; //array containing the appointments the mechanic has
 
     public:
-        Mechanic(string name="", int id=0, int age=0, int counter=0): Person(name, id, age){} //default class constructor 
+        Mechanic(): Person(){} //default class constructor 
         bool isAvailable(int hrs, int min); //checks if mechanic is available at the time given by the parameters 
         void setCounter(int counter); //setter for Counter variable 
         int getCounter(); //getter for Counter variable 
