@@ -5,6 +5,7 @@
 #include "customer.h"
 #include "mechanic.h"
 #include "queue.h"
+#include "appointment.h"
 using namespace std;
 
 
