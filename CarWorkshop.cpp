@@ -18,7 +18,7 @@ int main(){
     Mechanic *mechanics = new Mechanic [mechCount]; //creating an array of type Mechanic 
     string str;
     int i=0, h, m;
-    while(getline(cin, str)){ //reading mechanics' info from the file 
+    while(getline(file1, str)){ //reading mechanics' info from the file 
         mechanics[i].setName(str);
         cin >> str;
         mechanics[i].setID(stoi(str));
@@ -47,7 +47,7 @@ int main(){
     Customer *customers = new Customer [custCount]; //creating an array of type Customer 
     string str2;
     int x=0, h2, m2;
-    while(getline(cin, str2)){ //reading customers' info from the file 
+    while(getline(file2, str2)){ //reading customers' info from the file 
         customers[x].setName(str2);
         cin >> h2;
         cin >> m2;
