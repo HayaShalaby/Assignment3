@@ -60,4 +60,4 @@ bool queue<X>::isFull() {
         return true;
 }
 
-template class queue<Customers>; 
+template class queue<Customer>; 
