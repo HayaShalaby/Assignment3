@@ -1,4 +1,4 @@
-
+#include "customer.h"
 #include "queue.h"
 
 
@@ -18,7 +18,7 @@ X queue<X>::pop()
 {   if(isEmpty())
         cout << "The queue is empty." <<endl;
     else{
-        cout << "Removing " << arr[front] << endl;
+//         cout << "Removing " << arr[front] << endl;
         front = (front + 1) % capacity;
         count--;
         X x = arr[front];
@@ -34,7 +34,7 @@ void queue<X>::push(X item)
     if (isFull())
         cout << "The queue is full.";
     else{
-        cout << "Inserting " << item << endl;
+//         cout << "Inserting " << item << endl;
         rear = (rear + 1) % capacity;
         arr[rear] = item;
         count++;
@@ -59,3 +59,5 @@ bool queue<X>::isFull() {
     else 
         return true;
 }
+
+template class queue<Customers>; 
